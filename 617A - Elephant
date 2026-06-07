@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a; cin >> a;
+    int steps = 0;
+    if (a <= 5) steps = 1; 
+    else if ( a % 5 == 0) steps = a / 5;
+    else steps = a / 5 + 1;
+    cout << steps;
+    return 0;
+}
