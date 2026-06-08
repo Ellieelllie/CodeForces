@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    string a; cin >> a;
+    for (int i = 0; i < a.length(); i++){
+        a[i] = tolower(a[i]);
+        if (a[i] != 'a' and a[i] != 'o' and a[i] != 'y' and a[i] != 'e' and a[i] != 'u' and a[i] != 'i'){
+            cout << '.' << a[i];
+        }
+    }
+    return 0;
+}
