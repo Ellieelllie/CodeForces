@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    long long n, k, m; cin >> n >> k >> m;
+    int cost = 0;
+    int j = 1;
+    for (int i = 1; i <= m; i++){
+        cost += n * j;
+        j++;
+    }
+    if (cost > k) cout << cost - k;
+    else cout << 0;
+    return 0;
+}
